@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    background-color: black;
+    position: sticky;
+}
+
+.container {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    background-color: #b3ffb3;
+
+}
+
+.logo-img {
+    height: 100px;
+    width: 280px;
+    padding: 20px;
+}
+
+.input-box {
+    width: 1000px;
+    height: 150px;
+    display: block;
+    margin: 10px auto;
+    border: 1px solid #009900;
+}
+
+.bottons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px 0 10px 0;
+    margin-left: 10px;
+
+}
+
+.btn {
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: #009900;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #00e600;
+}
+
+.result-box {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content-box-container {
+    margin-top: 100px;
+}
+
+.content-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1500px;
+}
+
+.content {
+    margin: 20px;
+    width: 300px;
+    border: 1px solid #009900;
+    background-color:  #ccffcc;
+    box-shadow: 10px 10px 20px #009900;
+    padding: 10px;
+}
+
+/*small mobile device */
+@media screen and (max-width:336px) {
+    .input-box {
+        max-width: 250px;
+    }
+}
+
+@media screen and (min-width:335.5px) and (max-width:450px) {
+    .input-box {
+        max-width: 280px;
+    }
+}
+
+@media screen and (min-width:449.5px) and (max-width:650px) {
+    .input-box {
+        max-width: 380px;
+    }
+}
+
+/*tablet device */
+@media screen and (min-width:649.5px) and (max-width:900px) {
+    .input-box {
+        max-width: 550px;
+    }
+}
+
+/*laptop device */
+@media screen and (min-width:899.5px) and (max-width:1173px) {
+    .input-box {
+        max-width: 750px;
+    }
+}
